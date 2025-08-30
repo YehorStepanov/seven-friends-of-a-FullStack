@@ -1,0 +1,6 @@
+/* Artist Details Modal styles */
+@import url('./artist-modal.css');
+@import url('./artist-modal-about.css');
+@import url('./artist-modal-loader.css');
+@import url('./artist-modal-toast.css');
+@import url('./artist-modal-albums.css');

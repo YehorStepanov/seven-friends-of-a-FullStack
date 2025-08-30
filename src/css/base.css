@@ -29,6 +29,7 @@
   --opacity-neutral-darkest-40: rgba(6, 3, 7, 0.4);
   --opacity-neutral-darkest-50: rgba(6, 3, 7, 0.5);
   --opacity-neutral-darkest-60: rgba(6, 3, 7, 0.6);
+  --opacity-black-25: rgba(0, 0, 0, 0.25);
   --color-affair-lightest: #f1ecf4;
   --color-affair-lighter: #e3d9e9;
   --color-affair-light: #9f7ab2;
@@ -54,9 +55,16 @@
   --color-scheme-3-accent: var(--color-white);
   --color-scheme-3-foreground: var(--color-affair-darkest);
   --color-error-red: #af0404;
-  --font-family: "IBM Plex Sans", sans-serif;
-  --second-family: "Epilogue", sans-serif;
-  --third-family: "Roboto", sans-serif;
+  --error-color: #ef4040;
+  --success-color: #59a10d;
+  --success-progress-color: #326101;
+  --success-progress-background: #b5ea7c;
+  --error-progress-color: #b51b1b;
+  --error-progress-background: #ffbebe;
+
+  --font-family: 'IBM Plex Sans', sans-serif;
+  --second-family: 'Epilogue', sans-serif;
+  --third-family: 'Roboto', sans-serif;
 }
 body {
   display: flex;

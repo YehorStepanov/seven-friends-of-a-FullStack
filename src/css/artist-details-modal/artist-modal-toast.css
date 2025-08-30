@@ -1,0 +1,118 @@
+/* iziToast */
+
+.iziToast {
+  font-family: var(--second-family) !important;
+}
+
+.iziToast,
+.iziToast * {
+  font-size: 16px !important;
+}
+
+.iziToast > .iziToast-body {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  min-height: 24px !important;
+}
+
+.iziToast > .iziToast-body .iziToast-texts {
+  margin: 0 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.03em !important;
+}
+
+.iziToast > .iziToast-body .iziToast-title {
+  margin-right: 0 !important;
+  font-weight: 700 !important;
+}
+
+.iziToast > .iziToast-body .iziToast-message {
+  font-weight: 400 !important;
+  padding-top: 4px;
+}
+
+.iziToast.custom-error-toast {
+  padding: 20px;
+  max-height: 64px;
+  color: var(--light-primary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--error-color) !important;
+}
+
+.iziToast > .iziToast-body .iziToast-icon.ico-error {
+  display: none !important;
+}
+
+.iziToast.custom-error-toast .iziToast-icon {
+  margin: 0 !important;
+  position: static !important;
+  fill: var(--color-white) !important;
+  width: 24px;
+  height: 24px;
+  opacity: 1 !important;
+}
+
+.iziToast.custom-error-toast > .iziToast-close {
+  width: 24px;
+  height: 24px;
+  position: absolute !important;
+  top: 24px !important;
+  right: 20px !important;
+  background: none;
+  fill: var(--color-white) !important;
+}
+
+.iziToast.custom-error-toast .iziToast-close:hover {
+  opacity: 1;
+}
+
+.iziToast > .iziToast-progressbar {
+  position: absolute;
+  bottom: 0 !important;
+  left: 0px !important;
+  height: 4px !important;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+
+.iziToast.custom-error-toast > .iziToast-progressbar {
+  background-color: var(--error-progress-background);
+}
+
+.iziToast > .iziToast-progressbar > div {
+  height: 4px !important;
+  border-radius: 0;
+  transition: width 0.2s linear;
+}
+
+.iziToast.custom-error-toast > .iziToast-progressbar > div {
+  background-color: var(--error-progress-color) !important;
+}
+
+.iziToast.custom-error-toast .iziToast-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.iziToast.custom-error-toast .iziToast-message {
+  margin: 0 24px 0 0 !important;
+  color: var(--color-white) !important;
+}
+
+.iziToast:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}

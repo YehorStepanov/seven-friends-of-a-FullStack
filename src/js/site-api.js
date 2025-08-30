@@ -18,3 +18,10 @@ export async function getArtistsList(page = 1) {
     throw error;
   }
 }
+
+// Fetch artist data and albums by artist ID
+//! ============================================================================
+export const getArtistDataAndAlbums = async id => {
+  const res = await axios.get(`artists/${id}/albums`);
+  return res.data;
+};
